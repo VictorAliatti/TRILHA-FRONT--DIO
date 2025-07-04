@@ -30,5 +30,5 @@ Este projeto foi desenvolvido como parte do meu aprendizado em HTML e CSS, com o
 
 1. Clone este repositório:
 
-##Autor: 
+## Autor: 
 Desenvolvido por Victor Aliatti.
