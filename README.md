@@ -1,8 +1,8 @@
-# 🚀 Módulos Interativos com Estilo Futurista (HTML + CSS)
+#  Módulos Interativos com Estilo Futurista (HTML + CSS)
 
 Este projeto foi desenvolvido como parte do meu aprendizado em HTML e CSS, com o objetivo de criar **módulos de conteúdo interativos**, utilizando **animações, sombras internas, gradientes e efeitos hover** com um visual moderno e futurista (estilo sci-fi).
 
-## 🧠 O que foi praticado
+##  O que foi praticado
 
 - Estruturação de conteúdo com **HTML semântico**
 - Estilização de componentes com **CSS moderno**
@@ -12,13 +12,13 @@ Este projeto foi desenvolvido como parte do meu aprendizado em HTML e CSS, com o
 - Efeitos de **hover interativo com transições suaves**
 - Responsividade e centralização com `margin: auto` e `flex`
 
-## 💻 Tecnologias Utilizadas
+##  Tecnologias Utilizadas
 
 - HTML5
 - CSS3 (puro, sem frameworks)
 - Fontes do Google Fonts (opcional: Orbitron para visual futurista)
 
-## ✨ Funcionalidades
+##  Funcionalidades
 
 - Interface visual com **cartões de módulos**
 - Animações suaves ao passar o mouse
@@ -26,7 +26,7 @@ Este projeto foi desenvolvido como parte do meu aprendizado em HTML e CSS, com o
 - Brilho pulsante animado via CSS puro
 - Layout centralizado e elegante
 
-## 🧪 Como testar localmente
+##  Como testar localmente
 
 1. Clone este repositório:
 
