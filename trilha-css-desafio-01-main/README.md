@@ -31,4 +31,4 @@ Este projeto foi desenvolvido como parte do meu aprendizado em HTML e CSS, com o
 1. Clone este repositório:
 
 ##Autor: 
-Desenvolvido por Victor Aliatti
+Desenvolvido por Victor Aliatti.
