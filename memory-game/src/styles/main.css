@@ -3,7 +3,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url("/memory-game/src/imagem/fundo.jpg");
+    background-image: url("../imagem/fundo.jpg");
     user-select: none;
     
 }
