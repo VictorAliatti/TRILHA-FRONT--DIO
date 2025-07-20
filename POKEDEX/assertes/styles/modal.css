@@ -1,0 +1,84 @@
+/* Estilo do modal de detalhes do Pokémon */
+#pokemonModal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+#modalContent {
+  background-color: #fff;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 600px;
+  padding: 20px;
+  position: relative;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  animation: fadeIn 0.3s ease;
+}
+
+.modal-card {
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+}
+
+.modal-card h2 {
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+}
+
+.modal-img {
+  max-width: 200px;
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+.type-label .type {
+  margin: 0 4px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.2);
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.modal-info {
+  text-align: left;
+  margin-top: 1rem;
+  color: #222;
+}
+
+.stats {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0 0;
+}
+
+.stats li {
+  margin-bottom: 5px;
+  font-size: 0.95rem;
+}
+
+#closeModal {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: #333;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}

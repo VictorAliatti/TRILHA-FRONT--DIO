@@ -1,4 +1,3 @@
-
 const pokeApi = {}
 
 function convertPokeApiDetailToPokemon(pokeDetail) {
@@ -12,7 +11,39 @@ function convertPokeApiDetailToPokemon(pokeDetail) {
     pokemon.types = types
     pokemon.type = type
 
-    pokemon.photo = pokeDetail.sprites.other.dream_world.front_default
+    pokemon.photo = pokeDetail.sprites.other['official-artwork'].front_default
+
+    // Novos detalhes adicionais
+    pokemon.height = pokeDetail.height / 10 + ' m';
+    pokemon.weight = pokeDetail.weight / 10 + ' kg';
+    pokemon.abilities = pokeDetail.abilities.map((ab) => ab.ability.name).join(', ');
+
+    // Base Stats
+    pokeDetail.stats.forEach(stat => {
+        const statName = stat.stat.name
+        const baseStat = stat.base_stat
+
+        switch(statName) {
+            case 'hp':
+                pokemon.hp = baseStat;
+                break;
+            case 'attack':
+                pokemon.attack = baseStat;
+                break;
+            case 'defense':
+                pokemon.defense = baseStat;
+                break;
+            case 'special-attack':
+                pokemon.spAttack = baseStat;
+                break;
+            case 'special-defense':
+                pokemon.spDefense = baseStat;
+                break;
+            case 'speed':
+                pokemon.speed = baseStat;
+                break;
+        }
+    });
 
     return pokemon
 }
@@ -32,4 +63,4 @@ pokeApi.getPokemons = (offset = 0, limit = 5) => {
         .then((pokemons) => pokemons.map(pokeApi.getPokemonDetail))
         .then((detailRequests) => Promise.all(detailRequests))
         .then((pokemonsDetails) => pokemonsDetails)
-}
+} 
