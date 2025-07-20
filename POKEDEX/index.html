@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Pokedex</title>
 
     <!-- Normalize CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Font Roboto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,39 +15,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
 
     <!-- Nosso CSS -->
-    <link rel="stylesheet" href="assertes/styles/global.css">
-    <link rel="stylesheet" href="assertes/styles/pokedex.css">
-    <link rel="stylesheet" href="assertes/styles/modal.css">
+    <link rel="stylesheet" href="assertes/styles/global.css" />
+    <link rel="stylesheet" href="assertes/styles/pokedex.css" />
+    <link rel="stylesheet" href="assertes/styles/modal.css" />
+
+
 </head>
-
 <body>
-    <section class="content">
-        <h1>Pokedex</h1>
+  <section class="content">
+    <h1>Pokedex</h1>
+    <ol id="pokemonList" class="pokemons"></ol>
+    <div class="pagination">
+      <button id="loadMoreButton">Load More</button>
+    </div>
+  </section>
 
-        <ol id="pokemonList" class="pokemons">
-            <!-- ..... Pokemons ..... -->
-        </ol>
-
-        <div class="pagination">
-            <button id="loadMoreButton" type="button">
-                Load More
-            </button>
-        </div>
-    </section>
-
-        <!-- Modal de Detalhes do Pokémon -->
-    <div id="pokemonModal">
+  <div id="pokemonModal" style="display:none;">
     <div id="modalContent">
-        <button id="closeModal">X</button>
-        <!-- Conteúdo será preenchido via JavaScript -->
+      <button id="closeModal">X</button>
+      <!-- Conteúdo do modal vai aqui -->
     </div>
-    </div>
+  </div>
 
-
-    <!-- Nosso JS -->
-    <script src="assertes/script/pokemon-model.js"></script>
-    <script src="assertes/script/poke-api.js"></script>
-    <script src="assertes/script/main.js"></script>
+  <script src="assertes/script/poke-api.js"></script>
+  <script src="assertes/script/main.js"></script>
 </body>
-
 </html>
