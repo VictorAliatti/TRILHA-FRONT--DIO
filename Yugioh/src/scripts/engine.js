@@ -175,6 +175,9 @@ try {
 function init() {
     drawCards(5, state.playerSides.player1);
     drawCards(5, state.playerSides.player2);
+
+    const bgm = document.getElementById("bgm");
+    bgm.play();
 }
     
 init();
