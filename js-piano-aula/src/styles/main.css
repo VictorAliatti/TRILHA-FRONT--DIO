@@ -4,13 +4,14 @@
         justify-content: center;
         min-height: 100vh;
         background-color: #e3f2fd;
+        color: #fff;
     }
 
     .container{
         width: 780px;
         border-radius: 20px;
         padding: 100px 40px;
-        border: 1px solid red;
+        background-color: black;
     }
 
     header h2{
@@ -41,3 +42,25 @@
         cursor: pointer;
         position: relative;
     }
+
+    .keys-check input::before{
+        content: "";
+        height: 20px;
+        width: 20px;
+        background-color: #8c8c8c;
+        top: 50%;
+        left: 0.3rem;
+        border-radius: inherit;
+        position: absolute;
+        transform: translateY(-50%);
+        transition: all 0.3s ease;
+    }
+
+     .keys-check input:checked::before{
+        left: 2.1rem;
+        background-color: #8c8c8c;
+     }
+
+     .piano-keys{
+
+     }
